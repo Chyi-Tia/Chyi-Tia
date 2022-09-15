@@ -1,1 +1,1 @@
-TipCalculator Taught from Mark Lassof
+TipCalculator 
