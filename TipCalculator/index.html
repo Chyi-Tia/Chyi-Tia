@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <header>
+        <meta charset="utf-8">
+            <title> Tip Calculator  </title> 
+            <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+            <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+                
+    </header>
+        <body>
+           <!--Page start-->
+            <ons-page id="page1">
+                <div class="toolbar">
+                    <div class="toolbar__center">Tip Calculator</div>
+                  </div>
+                  <div style="text-align: center; margin-bottom: 30px;">
+                    <p>
+                      <ons-input id="billAmount" modifier="material underbar" placeholder="Please Enter Your Bill." float></ons-input>
+                    </p>
+                    <p>
+                        <ons-row>
+                          <ons-col width="40px" style="text-align: center; line-height: 31px;">
+                            <span class="material-icons">
+                                paid
+                             </span>
+                          </ons-col>
+                          <ons-col>
+                            <ons-range style="width: 100%;" value="0" min="0" max="50" step=".5" id="tipRange"></ons-range>
+                          </ons-col>
+                          <output id="percentOut">0%</output>
+                        </ons-row>
+                      <ons-button style="width: 50%;" style="text-align: center;"id="calcButton">Calculate</ons-button>
+                    </p>
+                  </div>
+                    <output id="billresultEnter"></output>
+            </ons-page>
+        <script src="tip.js"></script>  
+    </body>
+</html>
